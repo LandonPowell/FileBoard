@@ -1,0 +1,79 @@
+/* Color scheme:
+    * Teal: rgba(30, 50, 70, 1)
+    * White: rgba(255, 255, 255, .75)
+    * Orange: rgba(255, 150, 0, 1)
+    * Red: rgba(255, 0, 150, 1)
+    * Green: rgba(0, 255, 150, 1)
+    * Blue: rgba(0, 150, 255, 1)
+*/
+
+body {
+    margin: 0px;
+    font-size: 20px;
+    background-color: rgba(30, 50, 70, 1);
+    font-family: monospace, "Lucida Console", Monaco;
+}
+input#threadTitle { 
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 4px;
+    border: 2px solid rgba(255, 255, 255, .75);
+    background: none;
+    font-family: monospace, "Lucidia Console", Monaco;
+    width: 266px;
+    color: rgba(255, 0, 150, 1);
+}
+
+#threadAttachment {
+    margin-top: 13px;
+    margin-left: 10px;
+    display: inline-block;
+    padding: 70px 0 0 0;
+    height: 50px;
+    overflow: hidden;
+    box-sizing: border-box;
+    border: 2px solid rgba(255, 255, 255, .75);
+    border-radius: 2px;
+    background: center no-repeat url("threads/threadAssets/attachment.png");
+    background-size: 60px;
+    width: 278px;
+}
+#threadAttachment:hover {
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, .6);
+}
+input[type="submit"] {
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding: 4px;
+    border: 2px solid rgba(255, 255, 255, .75);
+    background: none;
+    color: rgba(255, 150, 0, 1);
+    font-family: monospace, "Lucidia Console", Monaco;
+}
+input[type="submit"]:hover {
+    color: rgba(255, 0, 150, 1);
+    box-shadow: 0px 0px 10px rgba(255, 0, 150, 1);
+}
+hr {
+    border: 0px;
+    height: 2px;
+    background-color: rgba(255, 255, 255, .75);
+}
+a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, .75);
+}
+.singleThread {
+    width: 500px;
+    border: 2px solid rgba(255, 255, 255, .75);
+    border-radius: 2px;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 5px;
+}
+.singleThread:hover {
+    color: rgba(255, 255, 255, .9);
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, .6);
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, .6);
+}
