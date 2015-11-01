@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> MessageBoard </title>
+        <title> FileBoard </title>
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
