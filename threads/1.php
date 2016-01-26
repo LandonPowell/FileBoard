@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> Latin is for Fags </title>
+        <title> bruno's test </title>
         <link rel="stylesheet" type="text/css" href="threadAssets/style.css">
     </head>
     <body>
         <div id="titlePost">
-            <h1> Latin is for Fags </h1>
+            <h1> bruno's test </h1>
             <div id="titleUpload">
-                <a href="fileUploads/26.jpg">
+                <a href="fileUploads/2.png">
                     <img src="threadAssets/attachment.png">
                 </a>
             </div>
@@ -18,7 +18,7 @@
             <form id="postForm" action="threadAssets/post.php" method="post" enctype="multipart/form-data">
                 <textarea id="postMessage"  name="postMessage"></textarea>
                 <input id="postAttachment"  name="postAttachment" type="file"/>
-                <input style="display:none" name="threadID" value="threads/24.php"/>
+                <input style="display:none" name="threadID" value="threads/1.php"/>
                 <br>
                 <input type="submit"/>
             </form>

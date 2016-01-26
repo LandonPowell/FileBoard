@@ -19,7 +19,7 @@
             $postHTML = "<!--{userPosts}-->
                       <div class=\"singlePost\">
                           <a class=\"postAttachment\" href=\"$fileURL\">
-                              <img src=\"threadAssets/attachment.png\">
+                              <img src=\"threadAssets//thumb.php?i=$fileURL\">
                           </a>
                           <p class=\"postMessage\">$postMessage</p>
                       </div>";
@@ -32,7 +32,7 @@
         }
 
         $threadHTML = str_replace("<!--{userPosts}-->", $postHTML, $threadHTML);
-        file_put_contents("uploadNameCounter", intval($uploadCounter) + 1);
+        file_put_contents("uploadNameCounter.txt", intval($uploadCounter) + 1);
         file_put_contents("../../" . $_POST["threadID"], $threadHTML);
         header("Location:../../" . $_POST["threadID"]);
     }

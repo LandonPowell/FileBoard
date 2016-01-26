@@ -13,7 +13,7 @@
             $index_2 = strpos($thread_content, "</title>") - $index_1;              // begins and ends.
             echo substr($thread_content, $index_1, $index_2);
             echo "</div>";
-            echo "</a>" . PHP_EOL; // PHP_EOL is an end of line.
+            echo "</a>" . PHP_EOL; // Close the 'a' tag and line break.
         }
     }
 ?>

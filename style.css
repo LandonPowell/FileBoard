@@ -1,79 +1,78 @@
-/* Color scheme:
-    * Teal: rgba(30, 50, 70, 1)
-    * White: rgba(255, 255, 255, .75)
-    * Orange: rgba(255, 150, 0, 1)
-    * Red: rgba(255, 0, 150, 1)
-    * Green: rgba(0, 255, 150, 1)
-    * Blue: rgba(0, 150, 255, 1)
-*/
+@import url(https://fonts.googleapis.com/css?family=Lora|Playfair+Display);
 
 body {
     margin: 0px;
     font-size: 20px;
-    background-color: rgba(30, 50, 70, 1);
-    font-family: monospace, "Lucida Console", Monaco;
+    background: url("threads/threadAssets/tiles.png") fixed #f7f7f7;
+    font-family: "Playfair Display", serif;
 }
-input#threadTitle { 
+form {
+    text-align: center;
+    background-color: #f7f7f7;
+    margin: 0px;
+    padding-bottom: 20px;
+    width: 300px;
+    margin: auto;
+    margin-top: 20px;
+    box-shadow: 0px 1px 2px rgba(0,0,10,0.4);
+}
+#threadTitle { 
+    font-family: "Lora", serif;
+    text-align: center;
+    color: #666;
+    border: none;
+    background-color: #fff;
+    width: 270px;
+    box-shadow: 0px 1px 2px rgba(0,0,10,0.4) inset;
     margin-top: 10px;
-    margin-left: 10px;
     padding: 4px;
-    border: 2px solid rgba(255, 255, 255, .75);
-    background: none;
-    font-family: monospace, "Lucidia Console", Monaco;
-    width: 266px;
-    color: rgba(255, 0, 150, 1);
 }
-
 #threadAttachment {
-    margin-top: 13px;
-    margin-left: 10px;
-    display: inline-block;
-    padding: 70px 0 0 0;
-    height: 50px;
+    margin-top: 10px;
+    padding: 100px 0 0 0;
+    height: 0px;
     overflow: hidden;
     box-sizing: border-box;
-    border: 2px solid rgba(255, 255, 255, .75);
     border-radius: 2px;
-    background: center no-repeat url("threads/threadAssets/attachment.png");
+    background: center no-repeat url("threads/threadAssets/attachment.png") #fff;
+    box-shadow: 0px 1px 2px rgba(0,0,10,0.4) inset;
     background-size: 60px;
     width: 278px;
 }
-#threadAttachment:hover {
-    box-shadow: 0px 0px 10px rgba(255, 255, 255, .6);
-}
 input[type="submit"] {
-    margin-left: 10px;
-    margin-top: 10px;
-    margin-bottom: 5px;
-    padding: 4px;
-    border: 2px solid rgba(255, 255, 255, .75);
-    background: none;
-    color: rgba(255, 150, 0, 1);
-    font-family: monospace, "Lucidia Console", Monaco;
-}
-input[type="submit"]:hover {
-    color: rgba(255, 0, 150, 1);
-    box-shadow: 0px 0px 10px rgba(255, 0, 150, 1);
-}
-hr {
-    border: 0px;
-    height: 2px;
-    background-color: rgba(255, 255, 255, .75);
+    font-family: "Lora", serif;
+    text-align: center;
+    color: #666;
+    border: none;
+    background-color: #fff;
+    width: 120px;
+    box-shadow: 0px 1px 2px rgba(0,0,10,0.4);
+    padding: 5px;
+    border-radius: 20px;
 }
 a {
     text-decoration: none;
-    color: rgba(255, 255, 255, .75);
+    color: #777;
+}
+@keyframes singleThread {
+    from {
+        width: 500px;
+    }
+    to {
+        width: 550px;
+    }
+    
 }
 .singleThread {
     width: 500px;
-    border: 2px solid rgba(255, 255, 255, .75);
-    border-radius: 2px;
-    margin-left: 10px;
-    margin-top: 10px;
-    padding: 5px;
+    background-color: #fff;
+    box-shadow: 0px 1px 2px rgba(0,0,10,0.4);
+    padding: 15px;
+    margin: auto;
+    margin-top: 15px;
 }
 .singleThread:hover {
-    color: rgba(255, 255, 255, .9);
-    text-shadow: 0px 0px 10px rgba(255, 255, 255, .6);
-    box-shadow: 0px 0px 10px rgba(255, 255, 255, .6);
+    width: 550px;
+    animation: singleThread;
+    animation-duration: .5s;
 }
