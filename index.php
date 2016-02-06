@@ -3,6 +3,7 @@
     <head>
         <title> FileBoard </title>
         <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript" src="index.js"></script>
     </head>
     <body>
         <form id="createThread" action="createThread.php" method="post" enctype="multipart/form-data">
