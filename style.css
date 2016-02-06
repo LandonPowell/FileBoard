@@ -16,6 +16,15 @@ form {
     margin-top: 20px;
     box-shadow: 0px 1px 2px rgba(0,0,10,0.4);
 }
+@keyframes errorBlink {
+    0% { box-shadow: 0px 1px 2px rgba(0,0,10,0.4) inset; }
+    50% { box-shadow: 0px 1px 2px rgba(255,0,10,0.8) inset; }
+    100% { box-shadow: 0px 1px 2px rgba(0,0,10,0.4) inset; }
+}
+.errorBlink {
+    animation: errorBlink;
+    animation-duration: .5s;
+}
 #threadTitle { 
     font-family: "Lora", serif;
     text-align: center;
@@ -39,7 +48,7 @@ form {
     background-size: 60px;
     width: 278px;
 }
-input[type="submit"] {
+#submit {
     font-family: "Lora", serif;
     text-align: center;
     color: #666;
@@ -49,20 +58,18 @@ input[type="submit"] {
     box-shadow: 0px 1px 2px rgba(0,0,10,0.4);
     padding: 5px;
     border-radius: 20px;
+    transition: box-shadow .25s;
+    cursor: pointer;
 }
+#submit:hover {
+    box-shadow: 0px 1px 5px rgba(0,0,10,0.4);
+}
+
 a {
     text-decoration: none;
     color: #777;
 }
-@keyframes singleThread {
-    from {
-        width: 500px;
-    }
-    to {
-        width: 550px;
-    }
-    
-}
+
 .singleThread {
     width: 500px;
     background-color: #fff;
@@ -70,9 +77,8 @@ a {
     padding: 15px;
     margin: auto;
     margin-top: 15px;
+    transition: width .25s;
 }
 .singleThread:hover {
     width: 550px;
-    animation: singleThread;
-    animation-duration: .5s;
 }

@@ -13,7 +13,8 @@
 
     if (move_uploaded_file($_FILES["threadAttachment"]["tmp_name"], $fileURL)
           and !in_array($ext, $blacklist)
-          and (strlen($title) >= 3)){
+          and (strlen($title) >= 3)
+          and (strlen($title) <= 20)){
         $fileURL =  trim($fileURL, "threads/");                                     // Makes the URL friendly to thread page.
         $threadHTML = str_replace("<!--{titleText}-->", $title,   $threadHTML);     // Adds the title to the thread page.
         $threadHTML = str_replace("<!--{uploadURL}-->", $fileURL, $threadHTML);     // Adds the file URL to the thread page.
