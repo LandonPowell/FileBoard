@@ -6,7 +6,7 @@
     $threadCount = file_get_contents("threadNameCounter.txt");                      // to pick file names.
 
     $ext = pathinfo($_FILES["threadAttachment"]["name"], PATHINFO_EXTENSION);
-    $fileURL = "threads/fileUploads/" . $upCount . "." .$ext;                       // Concatonate vars
+    $fileURL = "threads/fileUploads/" . $upCount . "." . $ext;                       // Concatonate vars
     $threadURL = "threads/" . $threadCount . ".php";                                // into file names.
 
     $blacklist = array("php", "php5", "htm", "html" ); // Any malicious extensions go here.
