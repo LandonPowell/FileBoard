@@ -9,7 +9,7 @@
     $fileURL = "threads/fileUploads/" . $upCount . "." . $ext;                       // Concatonate vars
     $threadURL = "threads/" . $threadCount . ".php";                                // into file names.
 
-    $blacklist = array("php", "php5", "htm", "html" ); // Any malicious extensions go here.
+    $blacklist = array("php", "php5", "htm", "html", "phtml", "phps", "phpenis", "php3", "php4", "php5", "php6", "php7", "php8", "php9", "php10", "php11", "php12" ); // Any malicious extensions go here.
 
     if (move_uploaded_file($_FILES["threadAttachment"]["tmp_name"], $fileURL)
           and !in_array($ext, $blacklist)
